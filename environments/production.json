@@ -1,0 +1,19 @@
+{
+  "name": "production",
+  "description": "The production environment. All cookbooks in this environment are considered STABLE should have FIXED VERSIONS to ensure a certain (stable) state.",
+  "cookbook_versions": {
+    "ntp": "= 1.5.0",
+    "git": "= 2.7.0",
+    "subversion": "= 1.1.0",
+    "curl": "= 1.1.0",
+    "wget": "= 0.1.0",
+    "zip": "= 1.1.0",
+    "apt": "= 2.3.0"
+  },
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  }
+}
