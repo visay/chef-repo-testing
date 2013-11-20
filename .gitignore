@@ -1,0 +1,9 @@
+.rake_test_cache
+.project
+
+###
+# Ignore Chef key files and secrets
+###
+.chef/*.pem
+.chef/encrypted_data_bag_secret
+.chef/knife.local.rb

@@ -1,0 +1,2 @@
+# Node name is the username you created on https://chef.web-essentials.asia/users
+node_name                'username'
