@@ -1,0 +1,25 @@
+{
+  "name": "ci-server",
+  "description": "Roles for a Continuous Integration server.",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "jenkins": {
+      "server": {
+        "host": "jenkins.web-essentials.asia"
+      },
+      "http_proxy": {
+        "variant": "apache2",
+        "host_name": "jenkins"
+      }
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[jenkins]",
+    "recipe[jenkins::proxy_apache2]"
+  ],
+  "env_run_lists": {
+  }
+}
