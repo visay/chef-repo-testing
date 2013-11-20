@@ -1,5 +1,6 @@
 .rake_test_cache
 .project
+.buildpath
 
 ###
 # Ignore Chef key files and secrets
