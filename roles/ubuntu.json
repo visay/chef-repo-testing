@@ -9,6 +9,7 @@
   "chef_type": "role",
   "run_list": [
     "recipe[apt]",
+    "recipe[tar]",
     "role[base]"
   ],
   "env_run_lists": {

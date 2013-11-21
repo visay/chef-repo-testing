@@ -14,7 +14,9 @@
         "host_name": "jenkins.web-essentials.asia",
         "ssl": {
             "enabled": true,
-            "redirect_http": true
+            "redirect_http": true,
+            "cert_path": "/etc/ssl/essentials/web-essentials.asia.crt",
+            "key_path": "/etc/ssl/essentials/wildcard.web-essentials.asia.key"
         }
       }
     }
@@ -22,7 +24,8 @@
   "chef_type": "role",
   "run_list": [
     "recipe[jenkins]",
-    "recipe[jenkins::proxy_apache2]"
+    "recipe[jenkins::proxy_apache2]",
+    "recipe[ant]"
   ],
   "env_run_lists": {
   }
