@@ -11,7 +11,11 @@
       },
       "http_proxy": {
         "variant": "apache2",
-        "host_name": "jenkins"
+        "host_name": "jenkins.web-essentials.asia",
+        "ssl": {
+            "enabled": true,
+            "redirect_http": true
+        }
       }
     }
   },
