@@ -15,14 +15,15 @@
         "ssl": {
             "enabled": true,
             "redirect_http": true,
-            "cert_path": "/etc/ssl/essentials/web-essentials.asia.crt",
-            "key_path": "/etc/ssl/essentials/wildcard.web-essentials.asia.key"
+            "cert_path": "/etc/ssl/certs/web-essentials.asia.crt",
+            "key_path": "/etc/ssl/private/web-essentials.asia.key"
         }
       }
     }
   },
   "chef_type": "role",
   "run_list": [
+    "recipe[ssl]",
     "recipe[jenkins::server]",
     "recipe[jenkins::proxy_apache2]",
     "recipe[ant]",
