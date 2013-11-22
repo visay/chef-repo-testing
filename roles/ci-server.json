@@ -25,7 +25,8 @@
   "run_list": [
     "recipe[jenkins]",
     "recipe[jenkins::proxy_apache2]",
-    "recipe[ant]"
+    "recipe[ant]",
+    "recipe[testing::unit]"
   ],
   "env_run_lists": {
   }

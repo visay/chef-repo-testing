@@ -1,3 +1,7 @@
 [submodule "site-cookbooks/wget"]
 	path = site-cookbooks/wget
 	url = git@github.com:visay/chef-cookbook-wget.git
+
+[submodule "site-cookbooks/testing"]
+	path = site-cookbooks/testing
+	url = git@github.com:visay/chef-cookbook-testing.git
