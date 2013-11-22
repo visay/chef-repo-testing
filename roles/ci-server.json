@@ -23,7 +23,7 @@
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[jenkins]",
+    "recipe[jenkins::server]",
     "recipe[jenkins::proxy_apache2]",
     "recipe[ant]",
     "recipe[testing::unit]"
