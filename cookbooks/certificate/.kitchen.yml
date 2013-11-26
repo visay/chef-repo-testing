@@ -1,0 +1,24 @@
+---
+driver_plugin: vagrant
+driver_config:
+  require_chef_omnibus: latest 
+
+platforms:
+- name: ubuntu-12.04
+- name: ubuntu-10.04
+- name: centos-6.4
+- name: centos-5.9
+
+suites:
+- name: default
+  data_bag_path: "test/integration/default/data_bags"
+  encrypted_data_bag_secret_key_path: "test/integration/default/encrypted_data_bag_secret"
+  run_list: ["recipe[certificate::manage_by_attributes]"]
+  attributes:
+    certificate: [
+      test: {
+        nginx_cert: true,
+        cert_file: "test.pem",
+        key_file: "test.key"
+      }
+    ]
