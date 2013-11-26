@@ -5,9 +5,26 @@
   "default_attributes": {
   },
   "override_attributes": {
+    "ssl": {
+      "group": "root"
+    },
     "jenkins": {
       "server": {
-        "host": "jenkins.web-essentials.asia"
+        "host": "jenkins.web-essentials.asia",
+        "plugins": [
+          "checkstyle",
+          "cloverphp",
+          "dry",
+          "htmlpublisher",
+          "jdepend",
+          "plot",
+          "pmd",
+          "violations",
+          "xunit",
+          "greenballs",
+          "sonar",
+          "cucumber-reports"
+        ]
       },
       "http_proxy": {
         "variant": "apache2",
