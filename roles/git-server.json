@@ -1,0 +1,23 @@
+{
+  "name": "git-server",
+  "description": "Configures and installs gitlab w/ https, and mysql server.",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "build_essential": {
+      "compiletime": true
+    }
+  },
+  "override_attributes": {
+    "gitlab": {
+      "certificate_databag_id": "wildcard",
+      "https": true
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[mysql::server]",
+    "recipe[gitlab]"
+  ],
+  "env_run_lists": {
+  }
+}
