@@ -17,10 +17,7 @@
           "plot",
           "pmd",
           "violations",
-          "xunit",
-          "greenballs",
-          "sonar",
-          "cucumber-reports"
+          "xunit"
         ]
       },
       "http_proxy": {
