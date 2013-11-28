@@ -5,7 +5,7 @@ log_location             STDOUT
 client_key               "#{current_dir}/client.pem"
 validation_client_name   'chef-validator'
 validation_key           "#{current_dir}/chef-validator.pem"
-chef_server_url          'https://chef.web-essentials.asia'
+chef_server_url          'https://chef-api.web-essentials.asia'
 
 cookbook_path [
   "#{current_dir}/../cookbooks",
