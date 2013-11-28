@@ -5,9 +5,6 @@
   "default_attributes": {
   },
   "override_attributes": {
-    "ssl": {
-      "group": "root"
-    },
     "jenkins": {
       "server": {
         "host": "jenkins.web-essentials.asia",
