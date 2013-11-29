@@ -9,6 +9,13 @@
       "server": {
         "host": "jenkins.web-essentials.asia",
         "plugins": [
+          "ant",
+          "token-macro",
+          "mailer",
+          "javadoc",
+          "maven-plugin",
+          "dashboard-view",
+          "analysis-core",
           "checkstyle",
           "cloverphp",
           "dry",
