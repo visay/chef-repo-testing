@@ -46,7 +46,7 @@
     "recipe[jenkins::server]",
     "recipe[jenkins::proxy_apache2]",
     "recipe[ant]",
-    "recipe[rvm::install]",
+    "recipe[rvm::user_install]",
     "recipe[testing::unit]"
   ],
   "env_run_lists": {

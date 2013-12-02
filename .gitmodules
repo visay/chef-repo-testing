@@ -5,3 +5,6 @@
 [submodule "site-cookbooks/testing"]
 	path = site-cookbooks/testing
 	url = git@github.com:visay/chef-cookbook-testing.git
+[submodule "cookbooks/rvm"]
+	path = cookbooks/rvm
+	url = git://github.com/fnichol/chef-rvm.git
