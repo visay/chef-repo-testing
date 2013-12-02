@@ -47,6 +47,7 @@
     "recipe[jenkins::proxy_apache2]",
     "recipe[ant]",
     "recipe[rvm::user_install]",
+    "recipe[phantomjs::default]",
     "recipe[testing::unit]"
   ],
   "env_run_lists": {
