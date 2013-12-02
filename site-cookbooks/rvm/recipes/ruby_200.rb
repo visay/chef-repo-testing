@@ -8,5 +8,5 @@
 end
 
 node.default[:rvm][:ruby][:implementation] = 'ruby'
-node.default[:rvm][:ruby][:version] = '1.9.3'
+node.default[:rvm][:ruby][:version] = '2.0.0'
 include_recipe "rvm::install"
