@@ -24,7 +24,8 @@
           "plot",
           "pmd",
           "violations",
-          "xunit"
+          "xunit",
+          "cucumber-reports"
         ]
       },
       "http_proxy": {
