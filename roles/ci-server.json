@@ -25,7 +25,8 @@
           "pmd",
           "violations",
           "xunit",
-          "cucumber-reports"
+          "cucumber-reports",
+          "greenballs"
         ]
       },
       "http_proxy": {
