@@ -7,27 +7,7 @@
   "override_attributes": {
     "jenkins": {
       "server": {
-        "host": "jenkins.web-essentials.asia",
-        "plugins": [
-          "ant",
-          "token-macro",
-          "mailer",
-          "javadoc",
-          "maven-plugin",
-          "dashboard-view",
-          "analysis-core",
-          "checkstyle",
-          "cloverphp",
-          "dry",
-          "htmlpublisher",
-          "jdepend",
-          "plot",
-          "pmd",
-          "violations",
-          "xunit",
-          "cucumber-reports",
-          "greenballs"
-        ]
+        "host": "jenkins.web-essentials.asia"
       },
       "http_proxy": {
         "variant": "apache2",
