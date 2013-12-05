@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jenkins.model.JenkinsLocationConfiguration>
+  <adminAddress>Continuous Integration &lt;qa@web-essentials.asia&gt;</adminAddress>
+  <jenkinsUrl>https://jenkins.web-essentials.asia/</jenkinsUrl>
+</jenkins.model.JenkinsLocationConfiguration>

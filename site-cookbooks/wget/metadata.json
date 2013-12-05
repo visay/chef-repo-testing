@@ -1,0 +1,29 @@
+{
+  "name": "wget",
+  "description": "Installs/Configures wget",
+  "long_description": "wget Cookbook\n=============\n\nInstalls/Configures wget.\n\nUsage\n-----\n\n#### wget::default\nJust include `wget` in your node's `run_list`:\n\n```json\n{\n  \"name\":\"my_node\",\n  \"run_list\": [\n    \"recipe[wget]\"\n  ]\n}\n```\n\nContributing\n------------\n\n1. Fork the repository on Github\n2. Create a named feature branch (like `add_component_x`)\n3. Write your change\n4. Write tests for your change (if applicable)\n5. Run the tests, ensuring they all pass\n6. Submit a Pull Request using Github\n\nLicense and Authors\n-------------------\n\nAuthor: Visay Keo <keo@visay.info>",
+  "maintainer": "Visay Keo",
+  "maintainer_email": "keo@visay.info",
+  "license": "MIT",
+  "platforms": {
+  },
+  "dependencies": {
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "0.1.0"
+}

@@ -1,0 +1,38 @@
+testing Cookbook
+================
+
+Configures php unit test and functional test as jenkins plugin.
+
+Requirements
+------------
+
+Depends on cookbook: php, jenkins.
+
+Usage
+-----
+
+#### testing::default
+Just include `testing` in your node's `run_list`:
+
+```json
+{
+  "name":"my_node",
+  "run_list": [
+    "recipe[testing::unit]"
+  ]
+}
+```
+
+Contributing
+------------
+
+1. Fork the repository on Github
+2. Create a named feature branch (like `add_component_x`)
+3. Write your change
+4. Write tests for your change (if applicable)
+5. Run the tests, ensuring they all pass
+6. Submit a Pull Request using Github
+
+License and Authors
+-------------------
+Author: Visay Keo <keo@visay.info>
