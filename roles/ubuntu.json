@@ -5,10 +5,13 @@
   "default_attributes": {
   },
   "override_attributes": {
+    "apt": {
+      "cacher_ipaddress": "10.10.10.34"
+    }
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[apt]",
+    "recipe[apt::cacher-client]",
     "recipe[tar]",
     "role[base]"
   ],

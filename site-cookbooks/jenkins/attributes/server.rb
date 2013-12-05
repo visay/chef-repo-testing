@@ -84,7 +84,8 @@ default['jenkins']['server']['plugins'] = [
   "xunit",
   "cucumber-reports",
   "greenballs",
-  "email-ext"
+  "email-ext",
+  "nested-view"
 ]
 
 default['jenkins']['server']['jvm_options'] = nil
