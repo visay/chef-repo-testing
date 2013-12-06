@@ -175,8 +175,9 @@
     </listView>
   </views>
   <primaryView>Projects</primaryView>
-  <slaveAgentPort>0</slaveAgentPort>
+  <slaveAgentPort>-1</slaveAgentPort>
   <label></label>
   <nodeProperties/>
   <globalNodeProperties/>
+  <noUsageStatistics>true</noUsageStatistics>
 </hudson>
