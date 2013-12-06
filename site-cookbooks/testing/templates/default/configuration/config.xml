@@ -55,7 +55,7 @@
   <disableRememberMe>false</disableRememberMe>
   <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$PatternProjectNamingStrategy">
     <namePattern>(\A([0-9]{3}-){2}([0-9]{2}-)?[a-z_0-9]{3,}-(extension|uat)\z)</namePattern>
-    <description></description>
+    <description>Job name must be in the format: ID-name-extension or ID-name-uat. Use dash (-) to separate ID and underscore (_) to separate name. ID is the project ID. Name in uat job is the website name and name in the extension job is the extension key. Name contains no space and all lowercase. Ex: "013-040-academy-uat", "012-043-01-we_aba-extension".</description>
     <forceExistingJobs>true</forceExistingJobs>
   </projectNamingStrategy>
   <workspaceDir>${ITEM_ROOTDIR}/workspace</workspaceDir>
@@ -87,7 +87,7 @@
       <views>
         <listView>
           <owner class="hudson.plugins.nested_view.NestedView" reference="../../.."/>
-          <name>01X-0XX Project Name</name>
+          <name>01X-XXX Project Name</name>
           <filterExecutors>false</filterExecutors>
           <filterQueue>false</filterQueue>
           <properties class="hudson.model.View$PropertyList"/>
@@ -102,6 +102,7 @@
             <hudson.views.LastDurationColumn/>
             <hudson.views.BuildButtonColumn/>
           </columns>
+          <includeRegex>01X-XXX-.+</includeRegex>
           <recurse>false</recurse>
         </listView>
       </views>
