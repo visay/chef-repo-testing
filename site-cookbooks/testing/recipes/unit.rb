@@ -118,7 +118,7 @@ directory "#{node[:jenkins][:server][:home]}/jobs/template-php" do
 end
 
 template "#{node[:jenkins][:server][:home]}/jobs/template-php/config.xml" do
-  source "template-php/config.xml"
+  source "job-php/config.xml"
   owner node[:jenkins][:server][:user]
   group node[:jenkins][:server][:group]
   not_if { File.exists?("#{node[:jenkins][:server][:home]}/jobs/template-php/config.xml") }
@@ -132,7 +132,7 @@ directory "#{node[:jenkins][:server][:home]}/jobs/template-cucumber" do
 end
 
 template "#{node[:jenkins][:server][:home]}/jobs/template-cucumber/config.xml" do
-  source "template-cucumber/config.xml"
+  source "job-cucumber/config.xml"
   owner node[:jenkins][:server][:user]
   group node[:jenkins][:server][:group]
   not_if { File.exists?("#{node[:jenkins][:server][:home]}/jobs/template-cucumber/config.xml") }
@@ -146,7 +146,7 @@ directory "#{node[:jenkins][:server][:home]}/jobs/template-php-cucumber" do
 end
 
 template "#{node[:jenkins][:server][:home]}/jobs/template-php-cucumber/config.xml" do
-  source "template-php-cucumber/config.xml"
+  source "job-php-cucumber/config.xml"
   owner node[:jenkins][:server][:user]
   group node[:jenkins][:server][:group]
   not_if { File.exists?("#{node[:jenkins][:server][:home]}/jobs/template-php-cucumber/config.xml") }
