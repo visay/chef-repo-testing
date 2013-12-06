@@ -84,6 +84,27 @@
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
+      <views>
+        <listView>
+          <owner class="hudson.plugins.nested_view.NestedView" reference="../../.."/>
+          <name>01X-0XX_Project-Name</name>
+          <filterExecutors>false</filterExecutors>
+          <filterQueue>false</filterQueue>
+          <properties class="hudson.model.View$PropertyList"/>
+          <jobNames/>
+          <jobFilters/>
+          <columns>
+            <hudson.views.StatusColumn/>
+            <hudson.views.WeatherColumn/>
+            <hudson.views.JobColumn/>
+            <hudson.views.LastSuccessColumn/>
+            <hudson.views.LastFailureColumn/>
+            <hudson.views.LastDurationColumn/>
+            <hudson.views.BuildButtonColumn/>
+          </columns>
+          <recurse>false</recurse>
+        </listView>
+      </views>
     </hudson.plugins.nested__view.NestedView>
     <listView>
       <owner class="hudson" reference="../../.."/>

@@ -187,6 +187,13 @@ template "#{node[:jenkins][:server][:home]}/jenkins.model.JenkinsLocationConfigu
   not_if { File.exists?("#{node[:jenkins][:server][:home]}/jenkins.model.JenkinsLocationConfiguration.xml") }
 end
 
+template "#{node[:jenkins][:server][:home]}/hudson.scm.SubversionSCM.xml" do
+  source "configuration/hudson.scm.SubversionSCM.xml"
+  owner node[:jenkins][:server][:user]
+  group node[:jenkins][:server][:group]
+  not_if { File.exists?("#{node[:jenkins][:server][:home]}/hudson.scm.SubversionSCM.xml") }
+end
+
 #jenkins_cli "safe-restart"
 
 # Install ruby using RVM
