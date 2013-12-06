@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<hudson.plugins.emailext.ExtendedEmailPublisherDescriptor plugin="email-ext@2.36">
+<hudson.plugins.emailext.ExtendedEmailPublisherDescriptor>
   <hudsonUrl>https://jenkins.web-essentials.asia/</hudsonUrl>
-  <adminAddress>address not configured yet &lt;nobody&gt;</adminAddress>
-  <useSsl>false</useSsl>
+  <adminAddress>Continuous Integration &lt;qa@web-essentials.asia&gt;</adminAddress>
+  <useSsl>true</useSsl>
   <defaultContentType>text/plain</defaultContentType>
   <defaultSubject>$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!</defaultSubject>
   <defaultBody>$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:&#xd;
@@ -16,6 +16,6 @@ Check console output at $BUILD_URL to view the results.</defaultBody>
   <overrideGlobalSettings>false</overrideGlobalSettings>
   <precedenceBulk>false</precedenceBulk>
   <debugMode>false</debugMode>
-  <enableSecurity>false</enableSecurity>
+  <enableSecurity>true</enableSecurity>
   <enableWatching>false</enableWatching>
 </hudson.plugins.emailext.ExtendedEmailPublisherDescriptor>

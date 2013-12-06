@@ -19,6 +19,11 @@
             "key_path": "/etc/ssl/private/web-essentials.asia.key"
         }
       }
+    },
+    "rvm": {
+      "rvmrc": {
+        "rvm_autolibs_flag": "disabled"
+      }
     }
   },
   "chef_type": "role",

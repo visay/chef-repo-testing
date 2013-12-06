@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson.tasks.Mailer_-DescriptorImpl plugin="mailer@1.5">
   <smtpAuthUsername>noreply@web-essentials.asia</smtpAuthUsername>
-  <smtpAuthPassword>paVCMI8QKnzI0Uxf4RnUQqOFAWMD7K7zwPtbIpIoBLY=</smtpAuthPassword>
+  <smtpAuthPassword>###EMAIL_PASSWORD###</smtpAuthPassword>
   <smtpHost>smtp.gmail.com</smtpHost>
   <useSsl>true</useSsl>
   <smtpPort>465</smtpPort>
