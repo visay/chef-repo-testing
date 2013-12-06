@@ -54,7 +54,7 @@
   </securityRealm>
   <disableRememberMe>false</disableRememberMe>
   <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$PatternProjectNamingStrategy">
-    <namePattern>(\A([0-9]{3}-){2}([0-9]{2}-)?[a-z]{3,}-(extension|uat)\z)</namePattern>
+    <namePattern>(\A([0-9]{3}-){2}([0-9]{2}-)?[a-z_0-9]{3,}-(extension|uat)\z)</namePattern>
     <description></description>
     <forceExistingJobs>true</forceExistingJobs>
   </projectNamingStrategy>
