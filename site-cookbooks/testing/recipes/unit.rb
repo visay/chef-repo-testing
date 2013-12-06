@@ -111,45 +111,45 @@ end
 #jenkins_cli "install-plugin #{plugins_to_install.join(' ')}"
 
 # INSTALL PHP TEMPLATE
-directory "#{node[:jenkins][:server][:home]}/jobs/php-template" do
+directory "#{node[:jenkins][:server][:home]}/jobs/template-php" do
   recursive true
   owner node[:jenkins][:server][:user]
   group node[:jenkins][:server][:group]
 end
 
-template "#{node[:jenkins][:server][:home]}/jobs/php-template/config.xml" do
-  source "php-template/config.xml"
+template "#{node[:jenkins][:server][:home]}/jobs/template-php/config.xml" do
+  source "template-php/config.xml"
   owner node[:jenkins][:server][:user]
   group node[:jenkins][:server][:group]
-  not_if { File.exists?("#{node[:jenkins][:server][:home]}/jobs/php-template/config.xml") }
+  not_if { File.exists?("#{node[:jenkins][:server][:home]}/jobs/template-php/config.xml") }
 end
 
 # INSTALL CUCUMBER TEMPLATE
-directory "#{node[:jenkins][:server][:home]}/jobs/cucumber-template" do
+directory "#{node[:jenkins][:server][:home]}/jobs/template-cucumber" do
   recursive true
   owner node[:jenkins][:server][:user]
   group node[:jenkins][:server][:group]
 end
 
-template "#{node[:jenkins][:server][:home]}/jobs/cucumber-template/config.xml" do
-  source "cucumber-template/config.xml"
+template "#{node[:jenkins][:server][:home]}/jobs/template-cucumber/config.xml" do
+  source "template-cucumber/config.xml"
   owner node[:jenkins][:server][:user]
   group node[:jenkins][:server][:group]
-  not_if { File.exists?("#{node[:jenkins][:server][:home]}/jobs/cucumber-template/config.xml") }
+  not_if { File.exists?("#{node[:jenkins][:server][:home]}/jobs/template-cucumber/config.xml") }
 end
 
 # INSTALL PHP CUCUMBER TEMPLATE
-directory "#{node[:jenkins][:server][:home]}/jobs/php-cucumber-template" do
+directory "#{node[:jenkins][:server][:home]}/jobs/template-php-cucumber" do
   recursive true
   owner node[:jenkins][:server][:user]
   group node[:jenkins][:server][:group]
 end
 
-template "#{node[:jenkins][:server][:home]}/jobs/php-cucumber-template/config.xml" do
-  source "php-cucumber-template/config.xml"
+template "#{node[:jenkins][:server][:home]}/jobs/template-php-cucumber/config.xml" do
+  source "template-php-cucumber/config.xml"
   owner node[:jenkins][:server][:user]
   group node[:jenkins][:server][:group]
-  not_if { File.exists?("#{node[:jenkins][:server][:home]}/jobs/php-cucumber-template/config.xml") }
+  not_if { File.exists?("#{node[:jenkins][:server][:home]}/jobs/template-php-cucumber/config.xml") }
 end
 
 # INSTALL Jenkin's Configuration
