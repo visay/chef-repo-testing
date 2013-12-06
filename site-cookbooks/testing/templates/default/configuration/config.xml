@@ -54,7 +54,7 @@
   </securityRealm>
   <disableRememberMe>false</disableRememberMe>
   <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$PatternProjectNamingStrategy">
-    <namePattern>uat-.+|extension-.+|template-.+</namePattern>
+    <namePattern>(\A([0-9]{3}-){2}([0-9]{2}-)?[a-z]{3,}-(extension|uat)\z)</namePattern>
     <description></description>
     <forceExistingJobs>true</forceExistingJobs>
   </projectNamingStrategy>
@@ -87,7 +87,7 @@
       <views>
         <listView>
           <owner class="hudson.plugins.nested_view.NestedView" reference="../../.."/>
-          <name>01X-0XX_Project-Name</name>
+          <name>01X-0XX Project Name</name>
           <filterExecutors>false</filterExecutors>
           <filterQueue>false</filterQueue>
           <properties class="hudson.model.View$PropertyList"/>
@@ -126,7 +126,7 @@
         <hudson.views.BuildButtonColumn/>
         <hudson.views.BuildButtonColumn/>
       </columns>
-      <includeRegex>uat-.+</includeRegex>
+      <includeRegex>.+-uat</includeRegex>
       <recurse>false</recurse>
     </listView>
     <listView>
@@ -148,8 +148,8 @@
         <hudson.views.LastDurationColumn/>
         <hudson.views.BuildButtonColumn/>
       </columns>
-      <includeRegex>extension-.+</includeRegex>
-      <recurse>true</recurse>
+      <includeRegex>.+-extension</includeRegex>
+      <recurse>false</recurse>
     </listView>
     <listView>
       <owner class="hudson" reference="../../.."/>
