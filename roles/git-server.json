@@ -8,13 +8,6 @@
     }
   },
   "override_attributes": {
-    "gitlab": {
-      "web_fqdn": "git.web-essentials.asia",
-      "email_from": "qa@web-essentials.asia",
-      "support_email": "qa@web-essentials.asia",
-      "ssl_certificate": "/etc/ssl/certs/web-essentials.asia.crt",
-      "ssl_certificate_key": "/etc/ssl/private/web-essentials.asia.key"
-    }
   },
   "chef_type": "role",
   "run_list": [

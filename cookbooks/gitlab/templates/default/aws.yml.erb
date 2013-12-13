@@ -1,0 +1,9 @@
+# See https://github.com/jnicklas/carrierwave#using-amazon-s3
+# for more options
+production:
+  access_key_id: <%= @aws_access_key_id %>
+  secret_access_key: <%= @aws_secret_access_key %>
+  bucket: <%= @bucket %>
+  region: <%= @region %>
+  host: <%= @host %>
+  endpoint: <%= @endpoint %>
