@@ -196,14 +196,26 @@ end
 
 #jenkins_cli "safe-restart"
 
-# Install ruby using RVM
+# Install ruby using RVM as jenkins user
 rvm_ruby "#{node[:rvm][:user_default_ruby]}" do
   action  :install
   user    "#{node[:jenkins][:server][:user]}"
 end
 
-# Set a default ruby version
+# Set a default ruby version as jenkins user
 rvm_default_ruby "#{node[:rvm][:user_default_ruby]}" do
   action  :create
   user    "#{node[:jenkins][:server][:user]}"
+end
+
+# Install ruby using RVM as root user
+rvm_ruby "#{node[:rvm][:user_default_ruby]}" do
+  action  :install
+  user    "root"
+end
+
+# Set a default ruby version as root user
+rvm_default_ruby "#{node[:rvm][:user_default_ruby]}" do
+  action  :create
+  user    "root"
 end

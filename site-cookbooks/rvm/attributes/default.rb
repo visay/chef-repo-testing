@@ -43,8 +43,14 @@ default['rvm']['rvmrc']         = Hash.new
 
 # a list of user hashes, each an isolated per-user RVM installation
 default["rvm"]["user_installs"] = [
-  "user" => "#{node[:jenkins][:server][:user]}",
-  "home" => "#{node[:jenkins][:server][:home]}"
+  {
+    "user" => "#{node[:jenkins][:server][:user]}",
+    "home" => "#{node[:jenkins][:server][:home]}"
+  },
+  {
+    "user" => "root",
+    "home" => "/root"
+  }
 ]
 
 # system-wide installer options
