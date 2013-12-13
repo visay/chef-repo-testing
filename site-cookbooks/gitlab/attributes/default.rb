@@ -32,7 +32,7 @@ default['gitlab']['namespace']  = "resque:gitlab"
 
 # GitLab hq config
 default['gitlab']['git_path'] = "/usr/local/bin/git"
-default['gitlab']['host'] = "localhost"
+default['gitlab']['host'] = "git.web-essentials.asia"
 
 default['gitlab']['email_from'] = "qa@web-essentials.asia"
 default['gitlab']['support_email'] = "qa@web-essentials.asia"
@@ -87,12 +87,12 @@ default['gitlab']['unicorn_timeout'] = 30
 # Setup environments
 if node['gitlab']['env'] == "development"
   default['gitlab']['port'] = "3000"
-  default['gitlab']['url'] = "http://localhost:3000/"
+  default['gitlab']['url'] = "http://git.web-essentials.asia:3000/"
   default['gitlab']['revision'] = "master"
   default['gitlab']['environments'] = %w{development test}
 else
   default['gitlab']['environments'] = %w{production}
-  default['gitlab']['url'] = "http://localhost:80/"
+  default['gitlab']['url'] = "http://git.web-essentials.asia:80/"
   default['gitlab']['revision'] = "6-3-stable" # Must be branch, otherwise GitLab update will run on each chef run
   default['gitlab']['port'] = "80"
 end
@@ -101,8 +101,8 @@ end
 
 default['gitlab']['ssl_certificate_path'] = "/etc/ssl/certs" # Path to .crt file. If it directory doesn't exist it will be created
 default['gitlab']['ssl_certificate_key_path'] = "/etc/ssl/private" # Path to .key file. If directory doesn't exist it will be created
-default['gitlab']['ssl_certificate'] = "web-essentials.asia.crt" # SSL certificate
-default['gitlab']['ssl_certificate_key'] = "web-essentials.asia.key" # SSL certificate key
+default['gitlab']['ssl_certificate'] = "" # SSL certificate
+default['gitlab']['ssl_certificate_key'] = "" # SSL certificate key
 
 # AWS is disabled by default. If enabled is set to true, bundler will install gems from aws group and use the credentials to populate config/aws.yml
 default['gitlab']['aws'] = {
