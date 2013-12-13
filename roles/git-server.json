@@ -10,12 +10,8 @@
   "override_attributes": {
     "gitlab": {
       "web_fqdn": "git.web-essentials.asia",
-      "nginx_server_names": [
-        "git.web-essentials.asia"
-      ],
       "email_from": "qa@web-essentials.asia",
       "support_email": "qa@web-essentials.asia",
-      "https": true,
       "ssl_certificate": "/etc/ssl/certs/web-essentials.asia.crt",
       "ssl_certificate_key": "/etc/ssl/private/web-essentials.asia.key"
     }
