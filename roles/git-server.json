@@ -12,7 +12,6 @@
   "chef_type": "role",
   "run_list": [
     "recipe[ssl]",
-    "recipe[mysql::server]",
     "recipe[gitlab]"
   ],
   "env_run_lists": {
