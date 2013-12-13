@@ -21,6 +21,16 @@
       }
     },
     "rvm": {
+      "user_installs": [
+        {
+          "user": "jenkins",
+          "home": "/var/lib/jenkins"
+        },
+        {
+          "user": "root",
+          "home": "/root"
+        }
+      ],
       "rvmrc": {
         "rvm_autolibs_flag": "disabled"
       }
