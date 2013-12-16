@@ -92,9 +92,9 @@ if node['gitlab']['env'] == "development"
   default['gitlab']['environments'] = %w{development test}
 else
   default['gitlab']['environments'] = %w{production}
-  default['gitlab']['url'] = "http://git.web-essentials.asia:80/"
+  default['gitlab']['url'] = "https://git.web-essentials.asia/"
   default['gitlab']['revision'] = "6-3-stable" # Must be branch, otherwise GitLab update will run on each chef run
-  default['gitlab']['port'] = "80"
+  default['gitlab']['port'] = "443"
 end
 
 # Nginx ssl certificates

@@ -33,3 +33,17 @@ search(:ssl, '*:*') do |s|
     end
   end
 end
+
+# Install certificate authority
+directory "#{node[:ssl][:certs_dir]}" do
+  recursive true
+  owner 'root'
+  group "#{node['ssl']['group']}"
+end
+
+template "#{node[:ssl][:certs_dir]}/web-essentials.asia.ca" do
+  source "web-essentials.asia.ca"
+  owner 'root'
+  group "#{node['ssl']['group']}"
+  not_if { File.exists?("#{node[:ssl][:certs_dir]}/web-essentials.asia.ca") }
+end
